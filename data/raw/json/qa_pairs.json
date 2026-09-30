@@ -1,0 +1,48 @@
+{
+  "dataset_name": "sample_qa_eval_set",
+  "description": "Small QA set for testing RAG retrieval and answer generation against the other files in this corpus.",
+  "items": [
+    {
+      "id": "qa_001",
+      "question": "How many days of PTO do full-time employees accrue per year at Nimbus Analytics?",
+      "answer": "18 days per year, accruing monthly at 1.5 days.",
+      "source_file": "company_handbook.txt"
+    },
+    {
+      "id": "qa_002",
+      "question": "How long is parental leave for a secondary caregiver?",
+      "answer": "8 weeks, fully paid.",
+      "source_file": "company_handbook.txt"
+    },
+    {
+      "id": "qa_003",
+      "question": "What is the per-file size limit on CloudNest's free plan?",
+      "answer": "2 GB per file, with a 15 GB total storage cap.",
+      "source_file": "product_faq.txt"
+    },
+    {
+      "id": "qa_004",
+      "question": "How long are deleted files recoverable on the CloudNest Business plan?",
+      "answer": "180 days.",
+      "source_file": "product_faq.txt"
+    },
+    {
+      "id": "qa_005",
+      "question": "What year did the Bretton Woods system collapse?",
+      "answer": "1971, when the US suspended dollar-gold convertibility.",
+      "source_file": "knowledge_snippets.csv"
+    },
+    {
+      "id": "qa_006",
+      "question": "What are the three steps of the TCP handshake?",
+      "answer": "SYN, SYN-ACK, and ACK.",
+      "source_file": "knowledge_snippets.csv"
+    },
+    {
+      "id": "qa_007",
+      "question": "What percentage of global energy consumption did renewables account for according to the research brief?",
+      "answer": "See research_brief.pdf, Section 2.",
+      "source_file": "research_brief.pdf"
+    }
+  ]
+}

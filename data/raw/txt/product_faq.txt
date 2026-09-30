@@ -1,0 +1,23 @@
+CLOUDNEST — FREQUENTLY ASKED QUESTIONS
+Product: CloudNest File Sync (v4.2)
+
+Q: What file size limit does CloudNest support on the free plan?
+A: The free plan supports individual files up to 2 GB and a total storage cap of 15 GB. The Pro plan raises the per-file limit to 50 GB with 2 TB of total storage, and the Business plan removes the per-file limit entirely, capped only by the team's pooled storage allocation.
+
+Q: How does CloudNest handle sync conflicts?
+A: When two devices edit the same file offline and reconnect, CloudNest creates a conflicted copy named "filename (conflicted copy, DeviceName, date).ext" rather than overwriting either version. Users can enable "Smart Merge" in Settings > Sync > Conflict Resolution for supported file types (currently .docx, .xlsx, and .md), which attempts a line-level merge before falling back to conflicted copies.
+
+Q: Can I recover permanently deleted files?
+A: Deleted files move to the Trash folder and are recoverable for 30 days on the free plan, 90 days on Pro, and 180 days on Business. After that window, files are purged permanently and cannot be recovered by CloudNest support under any circumstances.
+
+Q: Does CloudNest support end-to-end encryption?
+A: Yes. Enabling "Vault Mode" applies client-side AES-256 encryption before upload. Files in Vault Mode cannot be previewed in the web app or recovered by CloudNest support if the user loses their encryption passphrase, since CloudNest never stores the passphrase or a derived key.
+
+Q: How many devices can I sync simultaneously?
+A: Free plan: 3 devices. Pro plan: 10 devices. Business plan: unlimited devices per license seat. Exceeding the device limit prompts the user to deactivate an older device before adding a new one.
+
+Q: What happens to shared folders when the owner downgrades their plan?
+A: If an owner downgrades to a plan with less storage than their current usage, shared folders are set to read-only for all collaborators until the owner reduces usage below the new cap or upgrades again. Collaborators are notified by email 7 days before read-only mode takes effect.
+
+Q: Is there an API rate limit?
+A: The CloudNest REST API allows 1,200 requests per hour per access token on Pro and Business plans, and 300 requests per hour on the free plan. Bulk operations (batch upload/delete) count as a single request regardless of the number of files included, up to a maximum batch size of 500 files.
